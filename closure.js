@@ -1,16 +1,22 @@
 // alert("hello closure")
 
 function x() {
-  let a = 25;
+//   let a = 25;
   function y() {
     let a = 20 
     console.log(a); //20
   }
-  console.log(a) // 25
-  y();
+//   console.log(a) // 25
+//   y();
+
+return y;
 }
 
-x();
+var z = x();
+console.log(z) // here print all the function of "y"
+
+
+z(); // 25
 
 
 /** 
